@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	
+	<meta charset="UTF-8">
+	<title>Laboratorio 4</title>
+	<meta name="description" content="JavaScript"/>
+	<meta name="author" content="Oswaldo David García Rodríguez, A01206725"/>
+	<link rel="shortcut icon" href="images/Perfil012.png" type="image/x-icon"/>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<script src="functions.js"></script>
+</head>
+<body>
+	<article>
+		<h1>Laboratorio 4</h1>
+		<section>
+			<h2>Lista de cuadrados</h2>
+			<p>Escriba un número. El resultado será una lista de cuadrados y cubos de los números que van desde el 1 hasta el número introducido.</p>
+			<button onclick="list()">Calcular</button>
+			<table id="mathTable"></table>
+			<hr/>
+		</section>
+		<section>
+			<h2>Calcular suma (pista: tú eres quien la calcula)</h2>
+			<p>Resuelve una suma lo más rápido que puedas.</p>
+			<button onclick="suma()">¡A jugar!</button>
+			<p id="acierto"></p>
+			<hr/>
+		</section>
+		<section>
+			<h2>Contar positivos, ceros y negativos</h2>
+			<p>Genera una lista de números entre -10 y 10 al azar, contando los positivos, negativos y ceros.</p>
+			<button onclick="each()">Generar</button>
+			<p id="counter"></p>
+			<hr/>
+		</section>
+		<section>
+			<h2>Calcular promedios</h2>
+			<p>Genera una tabla con números al azar y los promedios de cada fila.</p>
+			<button onclick="rc()">Generar</button>
+			<p id="incorrecto"></p>
+			<hr/>
+		</section>
+		<section>
+			<h2>Inverso de un número</h2>
+			<p>Ingresa un número entero para sacar sus dígitos en orden inverso.</p>
+			<button onclick="inverso()">Calcular</button>
+			<p id="inversion"></p>
+			<hr/>
+		</section>
+		<section>
+			<h2>Problema de ACM</h2>
+			<p>Elimina todos los "WUB" de una oración y espacios que estén en los extremos o haya más de uno consecutivo. Revisa el problema <a href= "http://www.codeforces.com/problemset/problem/208/A" target="_blank">aquí.</a></p>
+			<button onclick="ACM()">Problema</button>
+			<p id="problem"></p>
+			<hr/>
+		</section>
+	</article>
+	<article>
+		<h1>Sección de preguntas</h1>
+		<section>
+			<h2>Lista</h2>
+			<ol>
+			<li>
+			    ¿Qué diferencias y semejanzas hay entre Java y JavaScript?
+			    <ul>
+			    	<li>Javascript no necesita un compilador, sino que basta con que el navegador lo interprete.</li>
+			    	<li>Java es un lenguaje orientado a objetos, mientras que Javascript no necesita declarar clases.</li>
+			    	<li>Javascript está limitado a páginas web, mientras que Java es de propósito general.</li>
+			    	<li>Javascrip no está fuertemente tipado (cualquier variable cambia cuando sea necesario). Java debe declarar su tipo, el cual no cambia de forma automática.</li>
+			    </ul>
+			</li>
+			<li>
+				¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)
+			    <ul>
+			    	<li>now(): regresa el número de milisegundos desde la medianoche de enero 1 de 1970.</li>
+			    	<li>parse(): regresa la cantidad de milisegundos entre la medianoche de enero 1 de 1970 y la fecha introducida como parámetro.</li>
+			    	<li>toString(): convierte una fecha en una cadena.</li>
+			    	<li>toUTCString(): crea una cadena con la fecha del Tiempo Universal Coordinado (UTC).</li>
+			    	<li>getUTCMilliseconds(): regresa la cantidad de milisegundos acorde al UTC, el rango es entre 0 y 999. Si se usaran minutos, sería entre 0 y 59. De ser días, sería entre 0 y 6.</li>
+			    </ul>
+			</li>
+			<li>
+				¿Qué métodos tienen los arreglos? (Menciona al menos 5*)?
+				<ul>
+					<li>toString(): convierte el arreglo en una cadena separada por comas.</li>
+					<li>join(): permite escoger el separador con el que se convierte el arreglo en cadena (por ejemplo: " - ").</li>
+					<li>pop(): remueve el último elemento de una lista y retorna el valor del que fue borrado.</li>
+					<li>push(): añade un nuevo elemento al inicio de la lista. pop("Casa").</li>
+					<li>slice(): crea una nueva lista nueva desde la posición indicada en el parámetro. Cabe destacar que las posiciones de la lista empiezan desde 0.</li>
+				</ul>
+			</li>
+			<li>
+				¿Cómo se declara una variable con alcance local dentro de una función?
+				<p>Dentro de la misma función se debe declarar la variable. Es decir, dentro de los corchetes.</p>
+			</li>
+			<li>
+				¿Qué implicaciones tiene utilizar variables globales dentro de funciones?
+				<p>Más de una función podrá modificarla. Además, no se reinician cada vez que se llama una función.</p>
+			</li>
+			<li>
+				¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?
+				includes() busca los caracteres que están incluidos en una cadena. Es un método muy útil en una base de datos.
+			</li>
+		</ol>
+		</section>
+	</article>
+	<section>
+		<h2>Referencias:</h2>
+		<p class="ref"><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
+	</section>
+</body>
+</html>

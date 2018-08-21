@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	
+	<meta charset="UTF-8">
+	<title>Laboratorio 1</title>
+	<meta name="description" content="HTML5, uso de etiquetas y comprensión de comceptos"/>
+	<meta name="author" content="Oswaldo David García Rodríguez, A01206725"/>
+	<link rel="shortcut icon" href="imágenes/Zelda.ico" type="image/x-icon"/> <!--Yo soy el iconito que aparece arriba en la pestañita-->
+	<link href="Laboratorio3.css" rel="stylesheet" type="text/css" />
+	<script src="functions.js"></script>
+</head>
+<body>
+	<article>
+		<h1>Laboratorio 1</h1>
+		<p>Mi nombre es Oswaldo David García Rodríguez. Soy un estudiante de la carrera de Sistemas Computacionales en el ¿cuarto? ¿séptimo? semestre.</p>
+		<section>
+			<h2>Mis gustos</h2>
+			<p>Me considero poco convencional en cuanto a la música. Si una canción me encanta, sin importar su género o artista, me quedo con ella, aunque podría decir que me decanto por el metal. En cuanto a videojuegos, también he sido muy fan de varios artistas independientes, especialmente los que trabajan con el PixelArt. También me gusta coleccionar objetos en miniatura, como juegos de mesa o maquinitas expendedoras que funcionan pese a su tamaño.</p>
+		</section>
+		<section>
+			<h2>Mis pasatiempos</h2>
+			<p>Durante un tiempo disfruté dibujando personajes sencillos como los que están en esta página. Sin embargo, hace más de un año que por falta de tiempo y creatividad ya no los hago. Estoy pensando en rehacerlos en formato pixel, como me han inspirado los artistas que mencioné anteriormente. También me gusta escribir. Mi género favorito es la fantasía, tomando también elementos de la ciencia ficción y de terror. He escrito cuentos breves tanto con temáticas infantiles como de horror.<br/>
+			¿Quieres saber de algunas historias que he escrito? <a href="RAINBOW.html">Haz clic aquí.</a>
+			</p>
+
+		</section>
+	</article>
+
+
+	<section><h2>Conceptos básicos: laboratorio 1</h2>
+		<ol type="1" start="1">
+  			<li>URL: Enlace de Internet para conectar a un sitio web.</li>
+  			<li>MIME: </li>
+		</ol>
+		<table>
+			<tr>
+				<td><ol type="1" start="3"><li>HTTP</li></ol></td>
+				<td><ul><li>HyperText Transfer Protocol. Principal protocolo que permite la transferencia de archivos en la Web. HTTP es textual.</li></ul></td>
+				<td><ul><li>
+					Los errores están clasificados dentro de los siguientes rangos:<br/>
+					100: Respuestas informativas.<br/>
+					200: Respuestas satisfactorias.<br/>
+					300: Direcciones.<br/>
+					400: Errores del cliente.<br/>
+					500: Errores del servidor.<br/>
+				</li></ul></td>
+			</tr>
+		</table>
+		<ol type="1" start="4">
+			<li>XML: eXtensible Markup Language. Lenguaje de marcado genérico especificado por la W3C. Permite a los usuarios definir sus propias etiquetas. Es un lenguaje de descripción de datos.</li>
+			<li>XHTML: eXtensible HyperText Markup Language. Lenguaje de marcado que adapta el HTML al XHTML, volviendo a ambos compatibles.</li>
+			<li>HTML5: Es una nueva versión de XHTML que permite explotar más características con menos recursos. Con este nuevo lenguaje, el estándar HTML4 deja de utilizarse, mientras que el XHTML entra en desuso al ya no ser necesario.</li>
+			<li>JS: Es un lenguaje de programación que permite escribir páginas web. No requieren de compilador, pues los navegadores son quienes se encargan de interpretarlo. Es muy usado por profesionales gracias a su complejidad.</li>
+			<li>PHP: HyperText Preprocessor. Es un lenguaje de programación diseñado para el desarrollo web de contenido dinámico. Está del lado del servidor gratuido e independiente de la plataforma. Posee muchas funciones y mucha documentación.</li>
+			<li>JSP: Similar a PHP, crea páginas web dinámicas con base en HTML y XHTML mediante lenguaje de programación Java, lo que hace posible escribirlas en los mismos editores.</li>
+			<li>AJAX: Técnica para para el desarrollo de sitios Web que implementan aplicaciones interactivas. Para hacer estas páginas se hace uso del lenguaje JavaScript.</li>
+		</ol>
+		<ul>
+			<li>
+				¿Cuál es la diferencia entre Internet y la World Wide Web?
+				WWW es el sistema que se utiliza para acceder a Internet. Internet es el conjunto de redes de comunicación interconectadas que utilizan los protocolos TCP/IP.<br/><br/>
+			</li>
+			<li>
+				¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?<br/>
+				GET sólo sirve para recuperar datos.<br/>
+				HEAD pide una respuesta idéntica a la de HEAD, pero sin el cuerpo de la respuesta.<br/>
+				POST envía una entidad a un recurso específico con el uso de formularios.<br/>
+				PUT reemplaza todas las representaciones actuales del recurso description, es decir, actualiza el contenido, pero también puede crearlo.<br/>
+				PATCH se usa para aplicar modificaciones parciales en un recurso.	
+				DELETE elimina un recurso identificado de una URL.<br/><br/>
+			</li>
+			<li>
+				¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?<br/>
+				POST envía mensajes en HTTP mediante formularios, por lo que es el que se requiere.<br/><br/>
+			</li>
+			<li>
+				¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?<br/>
+				GET lo hace. Mediante la URL retorna la información que tiene asociada.<br/><br/>
+			</li>
+			<li>
+				Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?<br/>
+				El código 200 es una respuesta satisfactoria que para este caso significa que el recurso HTML se ha recibido correctamente.<br/><br/>
+			</li>
+			<li>
+				¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?<br/>
+				Los errores del rango 400 pertenecen al cliente. El 404 pertence a un recurso que no se ha encontrado. Esto significa que el cliente ha elimiado dicho recurso, lo ha movido de dirección o ha proporcionado una incorrecta. Por tanto la responsabilidad es del desarrollador.<br/><br/>
+			</li>
+			<li>
+				¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?<br/>
+				Los errores del rango 500 son del servidor. El error 500 es una situación que no se sabe cómo manejar. El desarrollador no puede hacer nada al respecto, tiene que esperar a que el servidor pueda corregir el problema.<br/><br/>
+			</li>
+			<li>
+				¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.<br/>
+				Debido a las nuevas herramientas y características de HTML5, algunos recursos de HTML4, si bien no fueron eliminados, ya no se recomienda usarlos ya que se consideran obsoletas. Algunos ejemplos son applet, dir, isindex, menu.<br/><br/>
+			</li>
+			<li>
+				¿Cuáles son las diferencias principales entre HTML 4 y HTML5?<br/>
+				<ul>
+					<li>HTML5 es compatible tanto con HTML4 como con XHTML.</li>
+					<li>El juego de caracteres "meta" se simplifica en HTML5.</li>
+					<li>HTML5 simpifica el DOCTYPE.</li>
+					<li>HTML5 incluye elementos SVG y MathML.</li>
+					<li>Cambio de atributos en HTML5.</li>
+					<li>Varios elementos como el background desaparecen del HTML4.[3]</li>
+				</ul>
+				<br/>
+			</li>
+			<li>
+				¿Qué componentes de estructura y estilo tiene una tabla?<br/>
+				Sus etiquetas son:
+				<ul>
+					<li>caption</li>
+					<li>colgroup</li>
+					<li>thead</li>
+					<li>tfoot</li>
+					<li>tr</li>
+				</ul>
+				Los atributos de estilo son:
+				<ul>
+					<li>bgcolor</li>
+					<li>border</li>
+					<li>cellpadding</li>
+					<li>cellspacing</li>
+					<li>frame</li>
+					<li>rules</li>
+					<li>summary</li>
+					<li>width</li>
+				</ul><br/>
+			</li>
+			<li>
+				¿Cuáles son los principales controles de una forma HTML5?<br/>
+				<ul>
+					<li>number</li>
+					<li>range</li>
+					<li>date</li>
+					<li>color</li>
+					<li>search</li>
+					<li>datalist</li>
+					<li>tel</li>
+					<li>email</li>
+					<li>url</li>
+				</ul><br/>
+			</li>
+			<li>
+				¿Qué tanto soporte HTML5 tiene el navegador que utilizas?<br/>
+				Firefox 61.0 en Windows 10 tiene 495 de 555 puntos.<br/><br/><br/>
+			</li>
+
+    		<li>
+    			¿Cuál es el ciclo de vida de los sistemas de información?<br/>
+    			<ol>
+    				<li>Planificación: Realizar tareas previas que influirán en la finalización exitosa del proyecto.</li>
+    				<li>Análisis: Averiguar lo que debe hacer el sistema. Se debe descubrir qué es lo que realmente se necesita comprendiendo los requerimientos del sistema.</li>
+    				<li>Diseño: Estudiar alternativas de implementación para el sistema. Se decide la estructura general del sistema.</li>
+    				<li>Implementación: Seleccionar herramientas, entorno que facilite el trabajo y un lenguaje de programación adecuado.</li>
+    				<li>Pruebas: Detectar los errores de las anteriores etapas.</li>
+    				<li>Instalación o despliegue: Planificar el entorno donde funcionará el sistema en software y hardware.</li>
+    				<li>Uso y mantenimiento: Eliminar defectos detectados en la vida útil del sistema. Adaptarlo a nuevas necesidades. Añadirle nueva funcionalidad. [4] </li>
+    			</ol><br/><br/>
+    		</li>
+    		<li>
+    			¿Cuál es el ciclo de desarrollo de sistemas de información?<br/>
+    		</li>
+
+		</ul>
+	</section>
+
+	<section>
+		<h2>Preguntas: Laboratorio 2</h2>
+		<button onclick="myFunction()" class="button" id="myButton">Mostrar</button>
+		<div id="myDIV" style="display:none">
+			<ul>
+				<ol>
+					<li>
+						Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?<br/>
+						Usarlas cuando quieres evitar que se apliquen las reglas en cascada en ciertas partes de tu documento. De este modo, la regla que se marque como !important se volverá prioritaria sobre las otras.
+					</li>
+					<li>
+						Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?<br/>
+						Las imágenes pueden hacer que el texto se oculte o sea difícil verlo.
+					</li>
+					<li>
+						Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?<br/>
+						Dependiendo tus necesidades, usa el que más te convenga. A veces, un porcentaje es más útil que un tamaño absoluto, debes decidir en qué momento es mejor cuál.
+					</li>
+					<li>
+						¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?<br/>
+						La sangría, los espacios en blanco, comentarios y saltos de línea hacen que los archivos se vuelvan más pesados. Mientras más grande es el archivo, más se tarda en encontrar lo que requiere utilizar. Y mientras más memoria se ocupe, menor espacio ocupa en el servidor, permitiendo un mejor rendimiento.<br/>
+						Eso sí, recomiendo tener copias de seguridad de los archivos CSS sin reducir para poderlos depurar cuando sea necesario.
+					</li>
+				</ol>
+			</ul>
+		</div>
+	</section>
+
+	<section>
+		<h2>Referencias:</h2>
+		<p class="ref">[1] Firefox. (2018). <i>Recursos para desarrolladores, creados por desarrolladores.</i> Disponible en: <a href="https://developer.mozilla.org/es/"> https://developer.mozilla.org/es/</a></p>
+		<p class="ref">[2] Luis Thüer, S. (2002). Diseño Web. 1ra edición. Universidad Nacional de Río Cuarto, págs.33, 34.</p>
+		<p class="ref">[3] Luján, S. (2011). <i>¿Cuáles son las diferencias entre HTML4 y HTML5? Disponible en: </i><a href="https://blogs.ua.es/pi/2011/01/17/%C2%BFcuales-son-las-diferencias-entre-html4-xhtml-1-0-y-html5/">https://blogs.ua.es/pi/2011/01/17/%C2%BFcuales-son-las-diferencias-entre-html4-xhtml-1-0-y-html5/</a></p>
+		<p class="ref">[4] Cervantes Guerrero Alejandro. (2015, julio 20). <i>Ciclo de vida de un sistema de información.</i> Recuperado de <a href= "https://www.gestiopolis.com/ciclo-de-vida-de-un-sistema-de-informacion/">https://www.gestiopolis.com/ciclo-de-vida-de-un-sistema-de-informacion/</a></p>
+	</section>
+	<article>
+		<h2>Información de contacto:</h2>
+		<address>
+			Oswaldo David García Rodríguez <br/>
+			A01206725@itesm.mx<br/>
+			Tec de Monterrey, Campus Querétaro<br/>
+		</address>
+	</article>
+	<hr/>
+	<footer>
+		Editor utilizado: Sublime text 3. Disponible <a href="http://www.sublimetext.com/" target="_blank">aquí.</a>
+	</footer>
+
+</body>
+</html>

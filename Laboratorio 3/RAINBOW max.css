@@ -1,0 +1,63 @@
+body
+{
+	background-image:url('imágenes/RAINBOW.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1{
+	color:#0b4a72;
+	text-align: center;
+	font-family:"Arial";
+	font-weight:bold;
+	font-size:200%;
+}
+
+h2{
+	color:#096cab;
+	text-align: left;
+	font-family:"Arial";
+	font-weight:bold;
+}
+
+table{
+	width:95%;
+	margin-left: auto;
+	margin-right: auto;
+	border:3px solid #0b4a72;
+	border-collapse: collapse;
+	text-align: center;
+	font-family: "Arial";
+	font-size: 150%;
+	background: rgba(0, 0, 0, .5);
+}
+
+p
+{
+	font-family: "Arial";
+	color:white;
+	font-size: 80%;
+	text-align: justify;
+}
+
+td, th
+{
+	border: 1px solid #0b4a72;
+	padding: 10px 15px;
+	color: #251c55;
+}
+
+th
+{
+	font-size:larger;
+	color: #eeeeee;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 60em;
+
+  line-height: 1.5;
+  padding: 4em 1em;
+}
