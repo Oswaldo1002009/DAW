@@ -99,7 +99,7 @@ button:active {
    background: #010a29;
    }
 
-ul, ol{
+ol{
 	list-style-type: upper-roman;
 }
 

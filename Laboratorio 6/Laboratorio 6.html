@@ -63,7 +63,7 @@
 				<tr>
 					<td>
 						<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-						  <img src="images/Perfil012.png" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="100">
+						  <img src="images/Perfil012.png" draggable="true" ondragstart="drag(event)" id="drag1" alt="Cozauhticóatl" width="100" height="100">
 						</div>
 					</td>
 					<td>
@@ -71,7 +71,7 @@
 					</td>
 					<td>
 						<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
-							<img src="images/Perfil011.png" draggable="true" ondragstart="drag(event)" id="drag2" width="100" height="100">
+							<img src="images/Perfil011.png" draggable="true" ondragstart="drag(event)" id="drag2" alt="Sly & Nicolas" width="100" height="100">
 						</div>
 					</td>
 				</tr>
@@ -84,13 +84,25 @@
 			<h2>Lista</h2>
 			<ol>
 			<li>
-			    ¿Qué diferencias y semejanzas hay entre Java y JavaScript?
+			    ¿Cuáles son las diferencias entre los posibles valores de la propiedad position?<br/>
 			    <ul>
-			    	<li>Javascript no necesita un compilador, sino que basta con que el navegador lo interprete.</li>
-			    	<li>Java es un lenguaje orientado a objetos, mientras que Javascript no necesita declarar clases.</li>
-			    	<li>Javascript está limitado a páginas web, mientras que Java es de propósito general.</li>
-			    	<li>Javascrip no está fuertemente tipado (cualquier variable cambia cuando sea necesario). Java debe declarar su tipo, el cual no cambia de forma automática.</li>
+			    	<li>static: no tiene nada de especial, está de acuerdo al flujo normal de la página</li>
+			    	<li>relative: posicionamiento relativo a su luhgar original (no de la página)</li>
+			    	<li>fixed: permanece en la posición de la página, sin importar que se haga scroll o no</li>
+			    	<li>absolute: posicionado relativamente a su ancestro más cercano (el tag dentro del cual está)</li>
+			    	<li>sticky: tiene una posición original, pero se pegará al borde más cercano si se hace scroll para no desaparecer de la pantalla<br/></li>
 			    </ul>
+			</li>
+			<li>
+				¿Cuáles son los valores estándar para la propiedad visibility?<br/>
+				<ul>
+			    	<li>visible: se puede ver</li>
+			    	<li>hidden: no se puede ver, pero sigue el espacio que abarcaba sigue allí<br/></li>
+			    </ul>
+			</li>
+			<li>
+				¿Qué es el zIndex y para qué sirve?<br/>
+				Imagina que tu página html está compuesta por recortes que acomodas al estilo collage. Algunos pueden quedar encima de otros, así que puede que necesites ordenarlos para determinar cuál estará arriba. zindex se encarga de ello. valores positivos ponen a los objetos arriba. Mientras mayor valor, más arriba respecto a otros valores. Negativo los pone detrás. 0 no hace nada (vaya inútil :v)<br/>
 			</li>
 		</ol>
 		</section>
