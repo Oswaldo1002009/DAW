@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	
+	<meta charset="UTF-8">
+	<title>Laboratorio 6</title>
+	<meta name="description" content="JavaScript, documentos dinámicos"/>
+	<meta name="author" content="Oswaldo David García Rodríguez, A01206725"/>
+	<link rel="shortcut icon" href="images/Perfil012.png" type="image/x-icon"/>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<script src="functions.js"></script>
+</head>
+<body>
+	<article>
+		<h1>Laboratorio 6</h1><br/>
+		<p>Este es el laboratorio 4 con las nuevas funcionalidades del lab 6. Puede que la página parezca un poco confusa por eso.</p>
+		<section>
+			<h2 class="a">Lista de cuadrados (absolute position)</h2>
+			<p>Escriba un número. El resultado será una lista de cuadrados y cubos de los números que van desde el 1 hasta el número introducido.</p>
+			<button onclick="list()">Calcular</button>
+			<table id="mathTable"></table>
+			<hr/>
+		</section>
+		<section>
+			<h2 id="serif-font">Calcular suma (pista: tú eres quien la calcula) (serifado)</h2>
+			<p id="size">Resuelve una suma lo más rápido que puedas. 10 segundos es mucho. (extra tamaño)</p>
+			<button onclick="suma()">¡A jugar! (timeOut)</button>
+			<p id="acierto"></p>
+			<hr/>
+		</section>
+		<section id="position">
+			<h2>Contar positivos, ceros y negativos (Cambiar posición con clic)<button onclick="myFunction()">Clic y me muevo :O</button></h2>
+			<p>Genera una lista de números entre -10 y 10 al azar, contando los positivos, negativos y ceros.</p>
+			<button onclick="each()">Generar</button>
+			<p id="counter"></p>
+			<hr/>
+		</section>
+		<section>
+			<h2 id="myTitle">Calcular promedios <button onclick="italic()">Clic y me hago itálicas</button></h2>
+			<p>Genera una tabla con números al azar y los promedios de cada fila.</p>
+			<button onclick="rc()">Generar</button>
+			<p id="incorrecto"></p>
+			<hr/>
+		</section>
+		<section>
+			<h2 onmouseover="changeText()" onmouseout="normalText()" id="textChange">Inverso de un número</h2>
+			<p>Ingresa un número entero para sacar sus dígitos en orden inverso.</p>
+			<button onclick="inverso()">Calcular</button>
+			<p id="inversion"></p>
+			<hr/>
+		</section>
+		<section id="hide">
+			<button onclick="hide()">Ahora me ves</button>
+			<h2>Problema de ACM</h2>
+			<p>Elimina todos los "WUB" de una oración y espacios que estén en los extremos o haya más de uno consecutivo. Revisa el problema <a href= "http://www.codeforces.com/problemset/problem/208/A" target="_blank">aquí.</a></p>
+			<button onclick="ACM()">Problema</button>
+			<p id="problem"></p>
+			<hr/>
+		</section>
+		<section>
+			<h2>Arrastra y suelta</h2>
+			<p>Intercambia estas fotitos entre recuadros :)</p>
+			<table>
+				<tr>
+					<td>
+						<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+						  <img src="images/Perfil012.png" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="100">
+						</div>
+					</td>
+					<td>
+						<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+					</td>
+					<td>
+						<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<img src="images/Perfil011.png" draggable="true" ondragstart="drag(event)" id="drag2" width="100" height="100">
+						</div>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</article>
+	<article>
+		<h1>Sección de preguntas</h1>
+		<section>
+			<h2>Lista</h2>
+			<ol>
+			<li>
+			    ¿Qué diferencias y semejanzas hay entre Java y JavaScript?
+			    <ul>
+			    	<li>Javascript no necesita un compilador, sino que basta con que el navegador lo interprete.</li>
+			    	<li>Java es un lenguaje orientado a objetos, mientras que Javascript no necesita declarar clases.</li>
+			    	<li>Javascript está limitado a páginas web, mientras que Java es de propósito general.</li>
+			    	<li>Javascrip no está fuertemente tipado (cualquier variable cambia cuando sea necesario). Java debe declarar su tipo, el cual no cambia de forma automática.</li>
+			    </ul>
+			</li>
+		</ol>
+		</section>
+	</article>
+	<section>
+		<h2>Referencias:</h2>
+		<p class="ref"><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></p>
+	</section>
+</body>
+</html>
