@@ -12,11 +12,28 @@
 	<article>
 		<h1>Laboratorio 5</h1>
 		<section>
-			<a href="password\password.html">Password</a><br/>
-			<a href="buy\buy.html">Products</a><br/>
-			<a href="personalized\personalized.html">Problem</a>
+			<h2>Navigation</h2>
+			<p><a href="password/password.html">Password</a><br/></p>
+			<p><a href="buy/buy.html">Products</a><br/></p>
+			<p><a href="personalized/personalized.html">Problem</a></p>
 		</section>
-
+		<section>
+			<h2>Preguntas (volvemos al español)</h2>
+			<ul>
+				<li>
+					¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?<br/>
+					De esta manera se evita que los datos sean enviados al servidor y éste deba notificar de vuelta que el formulario no es correcto. Es mejor avisar desde javascript para que el usuario pueda corregir los inputs de inmediato y no necesitar llenarlo de nuevo.
+				</li>
+				<li>
+					¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?<br/>
+					Puede ser con inyecciones SQL, usando etiquetas en los forms de html como "validatenoform" o quitar el "onsubmit".
+				</li>
+				<li>
+					Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?<br/>
+					Es un buen primer paso para después hacer las validaciones en el servidor. En cuanto a seguridad, es bueno para  aprender a evitar que se inyecte código malicioso a través de inputs.
+				</li>
+			</ul>
+		</section>
 	</article>
 </body>
 </html>

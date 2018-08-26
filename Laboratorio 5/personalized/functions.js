@@ -4,11 +4,11 @@ var fR = document.getElementById('redN');
 
 rR.addEventListener('input', function (e) {
   fR.value = e.target.value;
-  newColor()
+  newColor();
 });
 fR.addEventListener('input', function (e) {
   rR.value = e.target.value;
-  newColor()
+  newColor();
 });
 
 //Sync green
@@ -17,11 +17,11 @@ var fG = document.getElementById('greenN');
 
 rG.addEventListener('input', function (e) {
   fG.value = e.target.value;
-  newColor()
+  newColor();
 });
 fG.addEventListener('input', function (e) {
   rG.value = e.target.value;
-  newColor()
+  newColor();
 });
 
 //Sync blue
@@ -30,11 +30,11 @@ var fB = document.getElementById('blueN');
 
 rB.addEventListener('input', function (e) {
   fB.value = e.target.value;
-  newColor()
+  newColor();
 });
 fB.addEventListener('input', function (e) {
   rB.value = e.target.value;
-  newColor()
+  newColor();
 });
 
 function newColor() {
