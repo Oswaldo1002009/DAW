@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	
+	<meta charset="UTF-8">
+	<title>Buying products</title>
+	<meta name="description" content="Compra de productos con formas"/>
+	<meta name="author" content="Oswaldo David García Rodríguez, A01206725"/>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<script src="functions.js"></script>
+</head>
+<body>
+	<h1>Welcome to the generic food store!</h1><br/><br/>
+	<form>
+		<table>
+			<tr>
+				<td>
+					<!--Recordar: class se puede repetir, id no-->
+					<img src="images/pizza.png" class="product-img" alt="Pizza"><br/>
+					<input type="number" class="product-name" name="pizza" id="pizza" min=0 step=1 value=0><br/>
+					Pizza: $6.<sup>99</sup>
+				</td>
+				<td>
+					<img src="images/burger.png" class="product-img" alt="Burger"><br/>
+					<input type="number" class="product-name" name="burger" id="burger" min=0 step=1 value=0><br/>
+					Burger: $1.<sup>99</sup> Discount: 3 for the price of 2!
+				</td>
+				<td>
+					<img src="images/chicken.png" class="product-img" alt="Chicken"><br/>
+					<input type="number" class="product-name" name="chicken" id="chicken" min=0 step=1 value=0><br/>
+					Chicken: $4.<sup>49</sup>
+				</td>
+			</tr>
+		</table>
+		<br/><br/><button onclick="buy()">Buy!</button>
+	</form>
+</body>
+</html>
