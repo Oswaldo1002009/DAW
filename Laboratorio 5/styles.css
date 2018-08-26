@@ -1,0 +1,67 @@
+body
+{
+	background-image:url('images/wallpaper.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+section
+{
+  background-color: rgba(37, 193, 206, .4);
+}
+
+h1{
+	color:#00ecff;
+	text-align: center;
+	font-family:"Arial";
+	font-weight:bold;
+	font-size:250%;
+}
+
+h2{
+	color:#096cab;
+	text-align: left;
+	font-family:"Arial";
+	font-weight:bold;
+
+	margin-top: 1em;
+  	padding-top: 1em;
+}
+
+p
+{
+	font-family: "Arial";
+	color:cyan;
+	font-size: 120%;
+	text-align: center;
+}
+
+p.ref
+{
+	font-size: 70%;
+	text-align: justify;
+}
+
+li{
+	font-family: "Arial";
+	color: cyan;
+}
+
+th{
+	font-family: "Arial";
+	color: cyan;
+}
+
+td{
+	font-family: "Arial";
+	color: white;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 60em;
+
+  line-height: 1.5;
+  padding: 4em 1em;
+}

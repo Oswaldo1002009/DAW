@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	
+	<meta charset="UTF-8">
+	<title>Personalized form</title>
+	<meta name="description" content="Llenar una forma"/>
+	<meta name="author" content="Oswaldo David García Rodríguez, A01206725"/>
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>Personalized form</h1><br/>
+	<article>
+		<h2>Color generator</h2>
+		<section>
+			<h3>Move sliders to get the color.</h3>
+			<form>
+				<table>
+					<tr>
+						<td>Red</td>
+						<td>
+							<input type="range" name="color" class="red" id="redR" min=0 max=255 step=1 value=127>
+						</td>
+						<td>
+							<input type="number" name="color" class="red" id="redN" min=0 max =255 step=1 value=127>
+						</td>
+					</tr>
+					<tr>
+						<td>Green</td>
+						<td>
+							<input type="range" name="color" class="green" id="greenR" min=0 max=255 step=1 value=127>
+						</td>
+						<td>
+							<input type="number" name="color" class="green" id="greenN" min=0 max =255 step=1 value=127>
+						</td>
+					</tr>
+					<tr>
+						<td>Blue</td>
+						<td>
+							<input type="range" name="color" class="blue" id="blueR" min=0 max=255 step=1 value=127>
+						</td>
+						<td>
+							<input type="number" name="color" class="blue" id="blueN" min=0 max =255 step=1 value=127>
+						</td>
+					</tr>
+				</table>
+			</form>
+
+		</section>
+	</article>
+	<script src="functions.js"></script>
+</body>
+</html>
