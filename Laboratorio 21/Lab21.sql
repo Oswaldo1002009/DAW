@@ -106,17 +106,17 @@ GO
 EXECUTE queryMaterial 'Lad',20
 
 --Consulta para proyecto MercadoTec
-DROP PROCEDURE IF EXISTS qTieneVentasE
+DROP PROCEDURE IF EXISTS qTieneVentas
 
 DELIMITER //
-CREATE PROCEDURE qTieneVentasE()
+CREATE PROCEDURE qTieneVentas()
 BEGIN
 	SELECT T.num_compra, fecha, C.total
-	FROM TieneVenta T, Ventas V, Compra C
-	WHERE T.num_compra = V.num_compra
-	AND V.num_compra = C.num_compra
-	AND T.num_compra NOT LIKE '';
+    FROM TieneVenta T, Ventas V, Compra C
+    WHERE T.num_compra = V.num_compra
+    AND V.num_compra = C.num_compra
+    AND T.num_compra LIKE '%';
 END //
 DELIMITER ;
 
-CALL qTieneVentasE()
+CALL qTieneVentas()
